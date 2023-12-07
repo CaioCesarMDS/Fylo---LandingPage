@@ -131,7 +131,7 @@ section .productive {
   padding: 150px 40px;
   max-height: 480px;
   justify-content: space-around;
-  background-image: url(../images/Rectangle.png);
+  background-image: url(/src/images/Rectangle.png);
   background-repeat: no-repeat;
   padding-bottom: 650px;
 }
