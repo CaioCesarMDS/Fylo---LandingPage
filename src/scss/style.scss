@@ -1,4 +1,3 @@
-
 :root {
     --primary-color: #ffffff;
     --secondary-color: #07043b;
@@ -8,7 +7,7 @@
     --senary-color: #f8f8fe;
     --septenary-color: #575988;
     --octanary-color: ;
-    
+
     --primary-font: "Raleway", sans-serif;
     --secondary-font: "Open Sans", sans-serif;
     --tertiary-font: "Nunito Sans", sans-serif;
@@ -37,10 +36,16 @@ body {
     padding: 0 40px;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 header {
     display: flex;
     padding: 40px 30px;
     justify-content: space-between;
+    gap: 40px;
 
     .logo {
         display: flex;
@@ -52,7 +57,6 @@ header {
         font-weight: 700;
     }
     img {
-        max-width: 100%;
         height: 1.3em;
     }
     .navegation {
@@ -64,7 +68,7 @@ header {
     }
 }
 
-.padding {
+.container {
     padding: 35px 0 150px 0;
 }
 
@@ -90,11 +94,6 @@ section {
                 padding-top: 20px;
                 letter-spacing: 1.3px;
             }
-        }
-
-        .hero-image {
-            max-width: 100%;
-            height: auto;
         }
 
         form {
@@ -136,12 +135,10 @@ section {
 section {
     .productive {
         display: flex;
-        padding: 150px 40px;
-        max-height: 480px;
+        padding: 120px 40px;
         justify-content: space-around;
         background-image: url(/src/images/Rectangle.png);
         background-repeat: no-repeat;
-        padding-bottom: 650px;
         .productive-text {
             max-width: 40%;
 
@@ -170,12 +167,11 @@ section {
                 }
 
                 img {
-                    max-width: 100%;
                     padding-top: 6px;
                 }
             }
             .quote {
-                margin-top: 40px;
+                margin: 40px 0;
                 width: 400px;
                 box-shadow: 6px black;
                 background-color: var(--primary-color);
@@ -234,9 +230,10 @@ section {
         display: flex;
         align-items: center;
         justify-content: space-around;
+        gap: 30px;
 
         .text {
-            width: 40%;
+            max-width: 40%;
 
             h2 {
                 font-family: var(--primary-font);
@@ -295,7 +292,6 @@ footer {
         padding: 60px;
 
         .contacts {
-
             .logo {
                 display: flex;
                 gap: 10px;
@@ -305,7 +301,6 @@ footer {
                 font-weight: 700;
 
                 img {
-                    max-width: 100%;
                     height: 1.3em;
                 }
             }
@@ -315,7 +310,7 @@ footer {
                 p {
                     padding: 10px 0;
                 }
-            } 
+            }
         }
         .informations2 {
             display: flex;
@@ -331,14 +326,14 @@ footer {
         .informations3 {
             display: flex;
             flex-direction: column;
-            gap: 10px;
+            gap: 20px;
             cursor: pointer;
 
             p:hover {
                 color: var(--tertiary-color);
             }
         }
-        
+
         .social-medias {
             display: flex;
             gap: 20px;
@@ -348,12 +343,11 @@ footer {
             i:hover {
                 color: var(--tertiary-color);
                 animation: translateY 0.8s infinite alternate;
-
             }
-            
+
             @keyframes translateY {
                 from {
-                    transform: translate(0) scale(1);
+                    transform: translateZ(0) scale(1);
                 }
 
                 to {
